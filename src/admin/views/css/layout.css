@@ -1,0 +1,89 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.main .sidebar {
+  width: 200px;
+  background: #2c333d;
+}
+.main .sidebar .web-title {
+  height: 60px;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item {
+  margin-left: -10px;
+  padding-left: 20px;
+  line-height: 40px;
+  color: #fff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item a {
+  color: #ddd;
+  text-decoration: none;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item.active {
+  background: #414c5b;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item.active:hover {
+  background: #414c5b;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item:active {
+  background: #414c5b;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item:hover {
+  background: #414c5b;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item .sidebar-sub-menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item .sidebar-sub-menu-list .sidebar-sub-menu-item {
+  margin-left: -10px;
+  padding-left: 20px;
+  line-height: 40px;
+  color: #fff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+  background: #373f4c;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item .sidebar-sub-menu-list .sidebar-sub-menu-item.active {
+  background: #3d4755;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item .sidebar-sub-menu-list .sidebar-sub-menu-item:active {
+  background: #3d4755;
+}
+.main .sidebar .sidebar-menu .sidebar-menu-list .sidebar-menu-item .sidebar-sub-menu-list .sidebar-sub-menu-item:hover {
+  background: #414c5b;
+}
+.main .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .content .header {
+  height: 60px;
+  border: 1px solid #333;
+}
+.main .content .container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.main .content .footer {
+  text-align: center;
+}

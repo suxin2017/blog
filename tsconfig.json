@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "esnext",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "dist",
+      "lib": ["dom", "es6"],
+      "baseUrl": "./src",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+    },
+    "exclude": [
+      "node_modules",
+      "dist"
+    ],
+    "include": [
+      "src/**/*.ts",
+      "tests/**/*.spec.ts"
+    ],
+    "files": [
+      "src/index.ts"
+    ]
+  }
+  

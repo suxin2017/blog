@@ -1,0 +1,35 @@
+<div class="sidebar d-md-none d-lg-block">
+    <div class="web-title">
+        <div class="icon"></div>
+        <span class="title">博客管理</span>
+    </div>
+    <nav class="sidebar-menu">
+        <ul class="sidebar-menu-list">
+            <% for( let sidebar of app.getSidebar()  ) { %>
+            <% if (req.path.indexOf(sidebar.path)!=-1) { %>
+            <li class="sidebar-menu-item active">
+                <a href=<%=req.baseUrl+sidebar.path%>><%=sidebar.name %></a>
+                <% if (sidebar.children) { %>
+                <ul class="sidebar-sub-menu-list">
+                    <% for( let subSidebar of sidebar.children ) { %>
+                    <% if (req.path === subSidebar.path) { %>
+                    <li class="sidebar-sub-menu-item active">
+                        <% } else { %>
+                    <li class="sidebar-sub-menu-item">
+                        <% } %>
+                        <a href=<%=req.baseUrl+subSidebar.path%>><%=subSidebar.name %></a>
+                    </li>
+                    <% } %>
+                </ul>
+                <% } %>
+            </li>
+            <% } else { %>
+            <li class="sidebar-menu-item">
+                <a href=<%=req.baseUrl+sidebar.path%>><%=sidebar.name %></a>
+            </li>
+            <% } %>
+
+            <% } %>
+        </ul>
+    </nav>
+</div>
